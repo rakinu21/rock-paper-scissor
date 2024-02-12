@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --background-color : #F5AF74;
+    --container: #f5b15e;
+}
+
+body{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  var(--background-color);
+}
+
+.container{
+    width: 670px;
+    height: 500px;
+    box-shadow: 5px 5px 15px #695e5e;
+    border-radius: 10px;
+    background-color:  var(--container);
+}
+.output{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player1{
+    width: 230px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 6rem;
+    transform: rotate(90deg);
+   
+}
+
+.computerPlayer{
+    width: 230px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    transform: rotate(-90deg) scaleX(-1);
+}
+.winning{
+    width: 100%;
+    height: 4rem;
+    display: grid;
+    place-content: center;
+    font-family: 'Honk', system-ui;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 2rem;
+
+}
+.choices-container{
+    width: 100%;
+    height: 5rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+#choices{
+    height: 100%;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+ cursor: pointer;
+}
+@media (orientation:portrait) {
+    .container{
+        width: 350px;
+    }
+    .winning{
+        font-size: 1.5rem;
+    }
+}
